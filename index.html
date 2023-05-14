@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="icon" href="https://i.pinimg.com/originals/b7/60/17/b7601705d7c22dc711faba1d544aa2b8.png" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="body-color-css">
+    <nav class="navbar-color-css navbar bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand">
+                <h2>Weather App</h2>
+            </a>
+            <form class="d-flex" role="search">
+                <input id="search" class="form-control me-2 search" type="search" placeholder="Search"
+                    aria-label="Search">
+                <button class="btn-color-css btn btn-outline-success px-3" type="submit"
+                    onclick="weather_api()">Go</button>
+            </form>
+        </div>
+    </nav>
+    <div class="card text-center">
+        <div class="card-header">
+            <img src="https://i.pinimg.com/originals/b7/60/17/b7601705d7c22dc711faba1d544aa2b8.png"
+                class="card-img-top container rotate linear infinite" id="weathericon" alt="image logo"
+                style="height: 200px;width: auto;">
+            <h3 id="cloud">Get Latest Weather Report...</h3>
+        </div>
+        <div class="card-body">
+            <h5 class="card-title" id="temperature"></h5>
+            <p id="address"></p>
+        </div>
+    </div>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Air Quality</th>
+                <th scope="col">Stats</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">CO</th>
+                <td id="co">0</td>
+            </tr>
+            <tr>
+                <th scope="row">NO<sub>2</sub></th>
+                <td id="no">0</td>
+            </tr>
+            <tr>
+                <th scope="row"> O<sub>3</sub></th>
+                <td colspan="2" id="o">0</td>
+            </tr>
+            <tr>
+                <th scope="row">SO<sub>2</sub></th>
+                <td colspan="2" id="so">0</td>
+            </tr>
+            <tr>
+                <th scope="row">PM 2.5</th>
+                <td colspan="2" id="pm25">0</td>
+            </tr>
+            <tr>
+                <th scope="row">PM 10</th>
+                <td colspan="2" id="pm10">0</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+<script src="index.js"></script>
+
+</html>
