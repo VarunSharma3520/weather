@@ -3,7 +3,7 @@ const weather_api = async() => {
     const location = document.getElementById("search").value
     const response = await fetch(`https://api.weatherapi.com/v1/current.json?key=fe0dba6abc0c4755b9f185936231405&q=`+location+`&aqi=yes`);
     const jsonData = await response.json();
-    let add = await jsonData.location.name +" " +  await jsonData.location.region + " " + await jsonData.location.country
+    let add = await jsonData.location.name +", " +  await jsonData.location.region + ", " + await jsonData.location.country
     let temp = await jsonData.current.temp_c
     let cloud = await jsonData.current.condition.text
     let icon =await jsonData.current.condition.icon
