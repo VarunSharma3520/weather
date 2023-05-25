@@ -1,20 +1,19 @@
 .rotate {
     animation: rotation 20s;
 }
-
 .linear {
     animation-timing-function: linear;
 }
-
 .infinite {
     animation-iteration-count: infinite;
 }
-
+.weathericon{
+    height: 200px;width: auto;
+}
 @keyframes rotation {
     from {
         transform: rotate(0deg);
     }
-
     to {
         transform: rotate(359deg);
     }
