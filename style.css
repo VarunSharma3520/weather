@@ -7,8 +7,9 @@
 .infinite {
     animation-iteration-count: infinite;
 }
-.weathericon{
-    height: 200px;width: auto;
+#weathericon{
+    height: 20rem;
+    width: 20rem;
 }
 @keyframes rotation {
     from {
